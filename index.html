@@ -625,6 +625,229 @@
 <!-- Audio carousel -->
 
 
+<style type="text/css">
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .custom-table th,
+  .custom-table td {
+    border: none;
+    padding: 10px 15px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  }
+
+  .custom-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .custom-table td {
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+  }
+
+  .custom-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .custom-table audio {
+    width: 100%;
+    max-width: 300px;
+  }
+</style>
+
+<section id="audio-carousel">
+  <div>
+    <label for="audioSelect">Select Audio:</label>
+    <select id="audioSelect" onchange="showAudioDetails()">
+      <option value="audio1">AAAA.mp4</option>
+      <option value="audio2">BBBB.mp4</option>
+      <option value="audio3">CCCC.mp4</option>
+      <option value="audio4">DDDD.mp4</option>
+    </select>
+  </div>
+  
+  <div id="audioDetails">
+    <div id="audio1" class="audio-row">
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Audio</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <audio controls>
+                <source src="static/audio/audio1.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>First audio description.</td>
+          </tr>
+          <tr>
+            <td>
+              <audio controls>
+                <source src="static/audio/audio1_offline_unity_a.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>First text</td>
+          </tr>
+          <tr>
+            <td>
+              <audio controls>
+                <source src="static/audio/audio1_offline_unity_b.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>First text</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="audio2" class="audio-row" style="display:none;">
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Audio</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <audio controls>
+                <source src="static/audio/audio2.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>Second audio description.</td>
+          </tr>
+          <tr>
+            <td>
+              <audio controls>
+                <source src="static/audio/audio2_offline_unity_a.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>Second text</td>
+          </tr>
+          <tr>
+            <td>
+              <audio controls>
+                <source src="static/audio/audio2_offline_unity_b.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>Second text</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="audio3" class="audio-row" style="display:none;">
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Audio</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <audio controls>
+                <source src="static/audio/audio3.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>Third audio description.</td>
+          </tr>
+          <tr>
+            <td>
+              <audio controls>
+                <source src="static/audio/audio3_offline_unity_a.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>Third text</td>
+          </tr>
+          <tr>
+            <td>
+              <audio controls>
+                <source src="static/audio/audio3_offline_unity_b.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>Third text</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="audio4" class="audio-row" style="display:none;">
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Audio</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <audio controls>
+                <source src="static/audio/audio4.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>Fourth audio description.</td>
+          </tr>
+          <tr>
+            <td>
+              <audio controls>
+                <source src="static/audio/audio4_offline_unity_a.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>Fourth text</td>
+          </tr>
+          <tr>
+            <td>
+              <audio controls>
+                <source src="static/audio/audio4_offline_unity_b.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>Fourth text</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<script>
+  function showAudioDetails() {
+    var selectedValue = document.getElementById('audioSelect').value;
+    var audioRows = document.getElementsByClassName('audio-row');
+
+    for (var i = 0; i < audioRows.length; i++) {
+      audioRows[i].style.display = 'none';
+    }
+
+    document.getElementById(selectedValue).style.display = 'block';
+  }
+</script>
+
+
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
