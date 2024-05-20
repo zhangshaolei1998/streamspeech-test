@@ -882,16 +882,17 @@
 
 <script>
   function showAudioDetails() {
-    var audioSelect = document.getElementById("audioSelect");
-    var selectedAudio = audioSelect.value;
-    var audioDetails = document.getElementById("audioDetails");
-    var audioRows = audioDetails.getElementsByClassName("audio-row");
+    var selectedValue = document.getElementById('audioSelect').value;
+    var audioRows = document.getElementsByClassName('audio-row');
+
     for (var i = 0; i < audioRows.length; i++) {
-      audioRows[i].style.display = "none";
+      audioRows[i].style.display = 'none';
     }
-    document.getElementById(selectedAudio).style.display = "block";
+
+    document.getElementById(selectedValue).style.display = 'block';
   }
 </script>
+<!-- Audio carousel -->
 
 
 
