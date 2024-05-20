@@ -127,7 +127,85 @@
   </div>
 </section>
 
+<!-- Audio carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="audio-carousel" class="carousel audio-carousel">
+        <div class="item">
+          <h2 class="subtitle has-text-centered">Audio Sample 1</h2>
+          <select id="audio-select-1" class="select is-rounded">
+            <option value="1">Sample 1</option>
+            <option value="2">Sample 2</option>
+            <option value="3">Sample 3</option>
+          </select>
+          <table class="table is-fullwidth is-bordered">
+            <thead>
+              <tr>
+                <th colspan="6">AAAA.mp4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Speech inputs</td>
+                <td colspan="5"><audio controls src="path_to_wav_file_1.wav"></audio></td>
+              </tr>
+              <tr>
+                <td>Transcription:</td>
+                <td colspan="5">Transcribed text 1</td>
+              </tr>
+              <tr>
+                <td>Ground Truth:</td>
+                <td colspan="5">Ground truth text 1</td>
+              </tr>
+              <tr>
+                <td colspan="2">Tasks</td>
+                <td>ASR</td>
+                <td>S2TT</td>
+                <td>S2ST (A)</td>
+                <td>S2ST (B)</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Offline</td>
+                <td>UnitY</td>
+                <td>text</td>
+                <td>text</td>
+                <td><audio controls src="path_to_wav_file_2.wav"></audio></td>
+                <td><audio controls src="path_to_wav_file_3.wav"></audio></td>
+              </tr>
+              <tr>
+                <td>StreamSpeech</td>
+                <td>text</td>
+                <td>text</td>
+                <td><audio controls src="path_to_wav_file_4.wav"></audio></td>
+                <td><audio controls src="path_to_wav_file_5.wav"></audio></td>
+              </tr>
+              <tr>
+                <td rowspan="2">Simultaneous</td>
+                <td>Wait-k</td>
+                <td>text</td>
+                <td>text</td>
+                <td><audio controls src="path_to_wav_file_6.wav"></audio></td>
+                <td><audio controls src="path_to_wav_file_7.wav"></audio></td>
+              </tr>
+              <tr>
+                <td>StreamSpeech</td>
+                <td>text</td>
+                <td>text</td>
+                <td><audio controls src="path_to_wav_file_8.wav"></audio></td>
+                <td><audio controls src="path_to_wav_file_9.wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Add more items as needed -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End audio carousel -->
 
+  
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
