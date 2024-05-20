@@ -316,7 +316,85 @@
   </section>
   <!-- End audio carousel -->
 
+<!-- Audio carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Audio Carousel</h2>
+      <div class="field">
+        <label class="label">Select Audio</label>
+        <div class="control">
+          <div class="select">
+            <select id="audioSelect" onchange="showAudioDetails()">
+              <option value="audio1">First audio</option>
+              <option value="audio2">Second audio</option>
+              <option value="audio3">Third audio</option>
+              <option value="audio4">Fourth audio</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <table class="table is-fullwidth">
+        <thead>
+          <tr>
+            <th>Audio</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody id="audioDetails">
+          <tr id="audio1" class="audio-row">
+            <td>
+              <audio controls>
+                <source src="static/audio/audio1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>First audio description.</td>
+          </tr>
+          <tr id="audio2" class="audio-row" style="display:none;">
+            <td>
+              <audio controls>
+                <source src="static/audio/audio2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>Second audio description.</td>
+          </tr>
+          <tr id="audio3" class="audio-row" style="display:none;">
+            <td>
+              <audio controls>
+                <source src="static/audio/audio3.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>Third audio description.</td>
+          </tr>
+          <tr id="audio4" class="audio-row" style="display:none;">
+            <td>
+              <audio controls>
+                <source src="static/audio/audio4.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+            <td>Fourth audio description.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 
+<script>
+  function showAudioDetails() {
+    var select = document.getElementById("audioSelect");
+    var selectedValue = select.value;
+    var rows = document.getElementsByClassName("audio-row");
+    for (var i = 0; i < rows.length; i++) {
+      rows[i].style.display = "none";
+    }
+    document.getElementById(selectedValue).style.display = "";
+  }
+</script>
 
 <!-- Paper poster -->
 <section class="hero is-small is-light">
