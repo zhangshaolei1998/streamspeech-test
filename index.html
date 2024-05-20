@@ -225,192 +225,202 @@
 </section>
 <!-- End youtube video -->
 
-<style type="text/css">
-  .custom-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-  }
+<!-- Audio carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Audio Carousel</h2>
+      <div class="field">
+        <label class="label">Select Audio</label>
+        <div class="control">
+          <div class="select">
+            <select id="audioSelect" onchange="showAudioDetails()">
+              <option value="audio1">First audio</option>
+              <option value="audio2">Second audio</option>
+              <option value="audio3">Third audio</option>
+              <option value="audio4">Fourth audio</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="audioDetails">
+        <div id="audio1" class="audio-row box">
+          <h3 class="title is-4">AAAA.mp4</h3>
+          <div class="content">
+            <p><strong>Speech inputs:</strong></p>
+            <audio controls>
+              <source src="static/audio/audio1.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p><strong>Transcription:</strong> First audio transcription</p>
+            <p><strong>Ground Truth:</strong> First audio ground truth</p>
+          </div>
+          <div class="content">
+            <p><strong>Tasks</strong></p>
+            <div class="columns is-mobile is-multiline">
+              <div class="column is-one-quarter has-text-centered">
+                <p>ASR</p>
+                <p>First text</p>
+              </div>
+              <div class="column is-one-quarter has-text-centered">
+                <p>S2TT</p>
+                <p>First text</p>
+              </div>
+              <div class="column is-one-quarter has-text-centered">
+                <p>S2ST (A)</p>
+                <audio controls>
+                  <source src="static/audio/audio1_offline_unity_a.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <div class="column is-one-quarter has-text-centered">
+                <p>S2ST (B)</p>
+                <audio controls>
+                  <source src="static/audio/audio1_offline_unity_b.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  .custom-table th,
-  .custom-table td {
-    padding: 10px 15px;
-    text-align: left;
-    border: none;
-  }
+        <div id="audio2" class="audio-row box" style="display:none;">
+          <h3 class="title is-4">BBBB.mp4</h3>
+          <div class="content">
+            <p><strong>Speech inputs:</strong></p>
+            <audio controls>
+              <source src="static/audio/audio2.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p><strong>Transcription:</strong> Second audio transcription</p>
+            <p><strong>Ground Truth:</strong> Second audio ground truth</p>
+          </div>
+          <div class="content">
+            <p><strong>Tasks</strong></p>
+            <div class="columns is-mobile is-multiline">
+              <div class="column is-one-quarter has-text-centered">
+                <p>ASR</p>
+                <p>Second text</p>
+              </div>
+              <div class="column is-one-quarter has-text-centered">
+                <p>S2TT</p>
+                <p>Second text</p>
+              </div>
+              <div class="column is-one-quarter has-text-centered">
+                <p>S2ST (A)</p>
+                <audio controls>
+                  <source src="static/audio/audio2_offline_unity_a.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <div class="column is-one-quarter has-text-centered">
+                <p>S2ST (B)</p>
+                <audio controls>
+                  <source src="static/audio/audio2_offline_unity_b.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  .custom-table th {
-    background-color: #f9f9f9;
-    font-weight: bold;
-    color: #333;
-    text-align: left;
-  }
+        <div id="audio3" class="audio-row box" style="display:none;">
+          <h3 class="title is-4">CCCC.mp4</h3>
+          <div class="content">
+            <p><strong>Speech inputs:</strong></p>
+            <audio controls>
+              <source src="static/audio/audio3.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p><strong>Transcription:</strong> Third audio transcription</p>
+            <p><strong>Ground Truth:</strong> Third audio ground truth</p>
+          </div>
+          <div class="content">
+            <p><strong>Tasks</strong></p>
+            <div class="columns is-mobile is-multiline">
+              <div class="column is-one-quarter has-text-centered">
+                <p>ASR</p>
+                <p>Third text</p>
+              </div>
+              <div class="column is-one-quarter has-text-centered">
+                <p>S2TT</p>
+                <p>Third text</p>
+              </div>
+              <div class="column is-one-quarter has-text-centered">
+                <p>S2ST (A)</p>
+                <audio controls>
+                  <source src="static/audio/audio3_offline_unity_a.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <div class="column is-one-quarter has-text-centered">
+                <p>S2ST (B)</p>
+                <audio controls>
+                  <source src="static/audio/audio3_offline_unity_b.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  .custom-table td {
-    border-bottom: 1px solid #eee;
-  }
+        <div id="audio4" class="audio-row box" style="display:none;">
+          <h3 class="title is-4">DDDD.mp4</h3>
+          <div class="content">
+            <p><strong>Speech inputs:</strong></p>
+            <audio controls>
+              <source src="static/audio/audio4.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+            <p><strong>Transcription:</strong> Fourth audio transcription</p>
+            <p><strong>Ground Truth:</strong> Fourth audio ground truth</p>
+          </div>
+          <div class="content">
+            <p><strong>Tasks</strong></p>
+            <div class="columns is-mobile is-multiline">
+              <div class="column is-one-quarter has-text-centered">
+                <p>ASR</p>
+                <p>Fourth text</p>
+              </div>
+              <div class="column is-one-quarter has-text-centered">
+                <p>S2TT</p>
+                <p>Fourth text</p>
+              </div>
+              <div class="column is-one-quarter has-text-centered">
+                <p>S2ST (A)</p>
+                <audio controls>
+                  <source src="static/audio/audio4_offline_unity_a.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <div class="column is-one-quarter has-text-centered">
+                <p>S2ST (B)</p>
+                <audio controls>
+                  <source src="static/audio/audio4_offline_unity_b.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  .custom-table tr:last-child td {
-    border-bottom: none;
-  }
+<script>
+  function showAudioDetails() {
+    var selectedValue = document.getElementById('audioSelect').value;
+    var audioRows = document.getElementsByClassName('audio-row');
 
-  .custom-table audio {
-    width: 100%;
-    max-width: 300px;
-  }
+    for (var i = 0; i < audioRows.length; i++) {
+      audioRows[i].style.display = 'none';
+    }
 
-  .table-header {
-    background-color: #f9f9f9;
-    font-weight: bold;
-    color: #333;
-    padding: 10px 15px;
-    text-align: left;
+    document.getElementById(selectedValue).style.display = 'block';
   }
-</style>
-
-<table class="custom-table">
-  <thead>
-    <tr>
-      <th class="table-header" colspan="6">AAAA.mp4</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="table-header" colspan="2">Speech inputs</td>
-      <td class="table-header" colspan="4">
-        <audio controls>
-          <source src="static/audio/audio1.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td class="table-header" colspan="2">Transcription:</td>
-      <td class="table-header" colspan="4">First text</td>
-    </tr>
-    <tr>
-      <td class="table-header" colspan="2">Ground Truth:</td>
-      <td class="table-header" colspan="4">First text</td>
-    </tr>
-    <tr>
-      <td class="table-header" colspan="2">Tasks</td>
-      <td class="table-header">ASR</td>
-      <td class="table-header">S2TT</td>
-      <td class="table-header">S2ST (A)</td>
-      <td class="table-header">S2ST (B)</td>
-    </tr>
-    <tr>
-      <td rowspan="2" class="table-header">Offline</td>
-      <td class="table-header">UnitY</td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_offline_unity_asr.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_offline_unity_s2tt.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_offline_unity_s2st_a.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_offline_unity_s2st_b.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td class="table-header">StreamSpeech</td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_offline_streamspeech_asr.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_offline_streamspeech_s2tt.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_offline_streamspeech_s2st_a.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_offline_streamspeech_s2st_b.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td rowspan="2" class="table-header">Simultaneous</td>
-      <td class="table-header">Wait-k</td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_simultaneous_waitk_asr.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_simultaneous_waitk_s2tt.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_simultaneous_waitk_s2st_a.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_simultaneous_waitk_s2st_b.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-    </tr>
-    <tr>
-      <td class="table-header">StreamSpeech</td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_simultaneous_streamspeech_asr.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_simultaneous_streamspeech_s2tt.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_simultaneous_streamspeech_s2st_a.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-      <td>
-        <audio controls>
-          <source src="static/audio/audio1_simultaneous_streamspeech_s2st_b.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</script>
+<!-- Audio carousel -->
 
 
 <!-- Video carousel -->
