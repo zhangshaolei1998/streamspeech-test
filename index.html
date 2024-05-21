@@ -165,21 +165,27 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title has-text-centered">Listen to StreamSpeech 🎧</h2>
-      <div class="field">
-        <label class="label">Select Audio</label>
-        <div class="control">
-          <div class="select">
-            <select id="audioSelect" onchange="showAudioDetails()">
-              <option value="audio1">French-to-English: common_voice_fr_17301936.mp3</option>
-              <option value="audio2">French-to-English: common_voice_fr_17767732.mp3</option>
-              <option value="audio3">French-to-English: common_voice_fr_17319835.mp3</option>
-              <option value="audio4">French-to-English: common_voice_fr_19458925.mp3</option>
-              <option value="audio5">Spanish-to-English: common_voice_es_19759842.mp3</option>
-              <option value="audio6">Spanish-to-English: common_voice_es_19716154.mp3</option>
-              <option value="audio7">German-to-English: common_voice_de_19153338.mp3</option>
-              <option value="audio8">German-to-English: common_voice_de_19155145.mp3</option>
-            </select>
+      <h2 class="title has-text-centered">🎧 Listen to StreamSpeech 🎧</h2>
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Select Audio</label>
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <div class="select">
+                <select id="audioSelect" onchange="showAudioDetails()">
+                  <option value="audio1">French-to-English: common_voice_fr_17301936.mp3</option>
+                  <option value="audio2">French-to-English: common_voice_fr_17767732.mp3</option>
+                  <option value="audio3">French-to-English: common_voice_fr_17319835.mp3</option>
+                  <option value="audio4">French-to-English: common_voice_fr_19458925.mp3</option>
+                  <option value="audio5">Spanish-to-English: common_voice_es_19759842.mp3</option>
+                  <option value="audio6">Spanish-to-English: common_voice_es_19716154.mp3</option>
+                  <option value="audio7">German-to-English: common_voice_de_19153338.mp3</option>
+                  <option value="audio8">German-to-English: common_voice_de_19155145.mp3</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1121,23 +1127,22 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">StreamSpeech Performance🎗</h2>
+        <h2 class="title is-3">🎗StreamSpeech Performance🎗</h2>
         <div class="content has-text-justified">
           <p>
             <strong>1. Offline speech-to-speech translation on CVSS-C benchmark</strong>
           </p>
           <img src="meta/images/offline_s2st.png" alt="MY ALT TEXT" style="width: 100%;"/>
-          <br>
+          <br><br>
           <p>
             <strong>2. Simultaneous speech-to-speech translation on CVSS-C benchmark</strong>
           </p>
           <img src="meta/images/simul_s2st.png" alt="MY ALT TEXT" style="width: 100%;"/>
-          <br>
+          <br><br>
           <p>
             <strong>3. Performance on auxiliary tasks: Streaming ASR & Simultaneous Speech-to-Text Translation</strong>
           </p>
-          <img src="meta/images/asr.png" alt="MY ALT TEXT" style="width: 60%;"/>
-          <img src="meta/images/s2tt.png" alt="MY ALT TEXT" style="width: 60%;"/>
+          <img src="meta/images/asr.png" alt="MY ALT TEXT" style="width: 50%;"/><img src="meta/images/s2tt.png" alt="MY ALT TEXT" style="width: 50%;"/>
         </div>
       </div>
     </div>
