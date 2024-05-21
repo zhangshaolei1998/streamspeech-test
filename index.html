@@ -71,7 +71,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Key Laboratory of Intelligent Information Processing, Institute of Computing Technology, Chinese Academy of Sciences (ICT/CAS)<br><sup>2</sup>University of Chinese Academy of Sciences<br><font color="red">ACL 2024</font></span>
+                    <span class="author-block"><sup>1</sup>Key Laboratory of Intelligent Information Processing, Institute of Computing Technology, Chinese Academy of Sciences (ICT/CAS)<br><sup>2</sup>University of Chinese Academy of Sciences<br><font color="red"><strong>ACL </strong></font></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -111,7 +111,7 @@
 
               <div class="single-image-display has-text-centered">
               <p>
-                <img src="meta/images/StreamSpeech.png" alt="MY ALT TEXT" style="width: 60%;"/>
+                <img src="meta/images/StreamSpeech.png" alt="MY ALT TEXT" style="width: 70%;"/>
               </p>
             </div>
             </div>
@@ -147,77 +147,18 @@
       <h2 class="title is-3">StreamSpeech</h2>
       <div class="single-image-display has-text-centered">
         <img src="meta/images/model.png" alt="MY ALT TEXT" style="width: 80%;"/>
+        <div class="column is-four-fifths">
         <p class="content has-text-justified">
           StreamSpeech employs two-pass architecture that first converts source speech into target text hidden states D text (autoregressive speech-to-text translation, AR-S2TT) and then generates target speech. The source/target/unit CTC decoders are introduced to learn alignments via multiple tasks of speech recognition (ASR), non-autoregressive speech-to-text translation (NAR-S2TT) and speech-to-unit translation (S2UT), accordingly guide the policy.
         </p>
+      </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End Single Image Display -->
 
-  
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
 
 <!-- Audio carousel -->
 <section class="hero is-small is-light">
@@ -229,7 +170,7 @@
         <div class="control">
           <div class="select">
             <select id="audioSelect" onchange="showAudioDetails()">
-              <option value="audio1">First audio</option>
+              <option value="audio1">Fr-En: common_voice_fr_17301936.mp3</option>
               <option value="audio2">Second audio</option>
               <option value="audio3">Third audio</option>
               <option value="audio4">Fourth audio</option>
@@ -239,12 +180,12 @@
       </div>
       <div id="audioDetails">
         <div id="audio1" class="audio-row box">
-          <h3 class="title is-4">AAAA.mp4</h3>
+          <h3 class="title is-4">Fr-En: common_voice_fr_17301936.mp3</h3>
           <div class="content">
             <table class="tg">
               <thead>
                 <tr>
-                  <th class="tg-0lax" colspan="6">AAAA.mp4</th>
+                  <th class="tg-0lax" colspan="6">French-to-English: common_voice_fr_17301936.mp3</th>
                 </tr>
               </thead>
               <tbody>
@@ -252,7 +193,7 @@
                   <td class="tg-0lax"><strong>Speech Inputs</strong></td>
                   <td class="tg-0lax" colspan="5">
                     <audio controls>
-                      <source src="static/audio/audio1.wav" type="audio/wav">
+                      <source src="meta/audio/common_voice_fr_17301936.source.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
@@ -260,17 +201,17 @@
                 <tr>
                   <td class="tg-0lax" rowspan="3"><strong>Ground Truth</strong></td>
                   <td class="tg-0lax">Transcription:</td>
-                  <td class="tg-0lax" colspan="4">First audio transcription</td>
+                  <td class="tg-0lax" colspan="4">jai donc lexpérience des années passées jen dirai un mot tout à lheure</td>
                 </tr>
                 <tr>
                   <td class="tg-0lax">Target Translation:</td>
-                  <td class="tg-0lax" colspan="4">First audio ground truth</td>
+                  <td class="tg-0lax" colspan="4">i therefore have the experience of the passed years i'll say a few words about that later</td>
                 </tr>
                 <tr>
                    <td class="tg-0lax">Target Speech:</td>
                   <td class="tg-0lax" colspan="4">
                     <audio controls>
-                      <source src="static/audio/audio1.wav" type="audio/wav">
+                      <source src="meta/audio/common_voice_fr_17301936.ref.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
@@ -320,34 +261,34 @@
                 <tr>
                   <td class="tg-0lax" rowspan="2"><strong>Simultaneous</strong></td>
                   <td class="tg-0lax">Wait-k (k=3)</td>
-                  <td class="tg-baqh">First text</td>
-                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">-</td>
+                  <td class="tg-baqh">the therefore i have the experience of past years i will tell you a word later</td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio1_waitk_a.wav" type="audio/wav">
+                      <source src="meta/audio/waitk.common_voice_fr_17301936.target.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio1_waitk_b.wav" type="audio/wav">
+                      <source src="meta/audio/waitk.common_voice_fr_17301936.merge.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                 </tr>
                 <tr>
                   <td class="tg-0lax"><font color="red">StreamSpeech<br>(chunk=320ms)</font></td>
-                  <td class="tg-baqh">First text</td>
-                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">jai donc expérience des années passé jen dirairai un mot tout à lheure</td>
+                  <td class="tg-baqh">i therefore have an experience of last years i will tell a word later</td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio1_streamspeech_simul_a.wav" type="audio/wav">
+                      <source src="meta/audio/streamspeech.common_voice_fr_17301936.target.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio1_streamspeech_simul_b.wav" type="audio/wav">
+                      <source src="meta/audio/streamspeech.common_voice_fr_17301936.merge.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
