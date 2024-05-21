@@ -127,23 +127,6 @@
   </div>
 </section>
 
-  
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section> -->
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -369,100 +352,110 @@
             <table class="tg">
               <thead>
                 <tr>
-                  <th class="tg-0lax" colspan="6">BBBB.mp4</th>
+                  <th class="tg-0lax" colspan="6">AAAA.mp4</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="tg-0lax">Speech inputs</td>
+                  <td class="tg-0lax"><strong>Speech Inputs</strong></td>
                   <td class="tg-0lax" colspan="5">
                     <audio controls>
-                      <source src="static/audio/audio2.wav" type="audio/wav">
+                      <source src="static/audio/audio1.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                 </tr>
                 <tr>
+                  <td class="tg-0lax" rowspan="3"><strong>Ground Truth</strong></td>
                   <td class="tg-0lax">Transcription:</td>
-                  <td class="tg-0lax" colspan="5">Second audio transcription</td>
+                  <td class="tg-0lax" colspan="4">First audio transcription</td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax">Ground Truth:</td>
-                  <td class="tg-0lax" colspan="5">Second audio ground truth</td>
+                  <td class="tg-0lax">Target Translation:</td>
+                  <td class="tg-0lax" colspan="4">First audio ground truth</td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax" colspan="2">Tasks</td>
-                  <td class="tg-baqh">ASR</td>
-                  <td class="tg-baqh">S2TT</td>
-                  <td class="tg-baqh">S2ST (A)</td>
-                  <td class="tg-baqh">S2ST (B)</td>
+                   <td class="tg-0lax">Target Speech:</td>
+                  <td class="tg-0lax" colspan="4">
+                    <audio controls>
+                      <source src="static/audio/audio1.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax" rowspan="2">Offline</td>
+                  <td class="tg-0lax" colspan="2"><strong>Tasks</strong></td>
+                  <td class="tg-baqh"><strong>ASR</strong></td>
+                  <td class="tg-baqh"><strong>S2TT</strong></td>
+                  <td class="tg-baqh"><strong>S2ST<br>(output)</strong></td>
+                  <td class="tg-baqh"><strong>S2ST<br>(multi-channel)</strong></td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax" rowspan="2"><strong>Offline</strong></td>
                   <td class="tg-0lax">UnitY</td>
-                  <td class="tg-baqh">Second text</td>
-                  <td class="tg-baqh">Second text</td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">First text</td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio2_offline_unity_a.wav" type="audio/wav">
+                      <source src="static/audio/audio1_offline_unity_a.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio2_offline_unity_b.wav" type="audio/wav">
-                      Your browser does not support the audio element.
-                    </audio>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tg-0lax">StreamSpeech</td>
-                  <td class="tg-baqh">Second text</td>
-                  <td class="tg-baqh">Second text</td>
-                  <td class="tg-baqh">
-                    <audio controls>
-                      <source src="static/audio/audio2_streamspeech_a.wav" type="audio/wav">
-                      Your browser does not support the audio element.
-                    </audio>
-                  </td>
-                  <td class="tg-baqh">
-                    <audio controls>
-                      <source src="static/audio/audio2_streamspeech_b.wav" type="audio/wav">
+                      <source src="static/audio/audio1_offline_unity_b.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax" rowspan="2">Simultaneous</td>
-                  <td class="tg-0lax">Wait-k</td>
-                  <td class="tg-baqh">Second text</td>
-                  <td class="tg-baqh">Second text</td>
+                  <td class="tg-0lax"><font color="red">StreamSpeech</font></td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">First text</td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio2_waitk_a.wav" type="audio/wav">
+                      <source src="static/audio/audio1_streamspeech_a.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio2_waitk_b.wav" type="audio/wav">
+                      <source src="static/audio/audio1_streamspeech_b.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax">StreamSpeech</td>
-                  <td class="tg-baqh">Second text</td>
-                  <td class="tg-baqh">Second text</td>
+                  <td class="tg-0lax" rowspan="2"><strong>Simultaneous</strong></td>
+                  <td class="tg-0lax">Wait-k (k=3)</td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">First text</td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio2_streamspeech_simul_a.wav" type="audio/wav">
+                      <source src="static/audio/audio1_waitk_a.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio2_streamspeech_simul_b.wav" type="audio/wav">
+                      <source src="static/audio/audio1_waitk_b.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax"><font color="red">StreamSpeech<br>(chunk=320ms)</font></td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="static/audio/audio1_streamspeech_simul_a.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="static/audio/audio1_streamspeech_simul_b.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
@@ -478,100 +471,110 @@
             <table class="tg">
               <thead>
                 <tr>
-                  <th class="tg-0lax" colspan="6">CCCC.mp4</th>
+                  <th class="tg-0lax" colspan="6">AAAA.mp4</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="tg-0lax">Speech inputs</td>
+                  <td class="tg-0lax"><strong>Speech Inputs</strong></td>
                   <td class="tg-0lax" colspan="5">
                     <audio controls>
-                      <source src="static/audio/audio3.wav" type="audio/wav">
+                      <source src="static/audio/audio1.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                 </tr>
                 <tr>
+                  <td class="tg-0lax" rowspan="3"><strong>Ground Truth</strong></td>
                   <td class="tg-0lax">Transcription:</td>
-                  <td class="tg-0lax" colspan="5">Third audio transcription</td>
+                  <td class="tg-0lax" colspan="4">First audio transcription</td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax">Ground Truth:</td>
-                  <td class="tg-0lax" colspan="5">Third audio ground truth</td>
+                  <td class="tg-0lax">Target Translation:</td>
+                  <td class="tg-0lax" colspan="4">First audio ground truth</td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax" colspan="2">Tasks</td>
-                  <td class="tg-baqh">ASR</td>
-                  <td class="tg-baqh">S2TT</td>
-                  <td class="tg-baqh">S2ST (A)</td>
-                  <td class="tg-baqh">S2ST (B)</td>
+                   <td class="tg-0lax">Target Speech:</td>
+                  <td class="tg-0lax" colspan="4">
+                    <audio controls>
+                      <source src="static/audio/audio1.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax" rowspan="2">Offline</td>
+                  <td class="tg-0lax" colspan="2"><strong>Tasks</strong></td>
+                  <td class="tg-baqh"><strong>ASR</strong></td>
+                  <td class="tg-baqh"><strong>S2TT</strong></td>
+                  <td class="tg-baqh"><strong>S2ST<br>(output)</strong></td>
+                  <td class="tg-baqh"><strong>S2ST<br>(multi-channel)</strong></td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax" rowspan="2"><strong>Offline</strong></td>
                   <td class="tg-0lax">UnitY</td>
-                  <td class="tg-baqh">Third text</td>
-                  <td class="tg-baqh">Third text</td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">First text</td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio3_offline_unity_a.wav" type="audio/wav">
+                      <source src="static/audio/audio1_offline_unity_a.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio3_offline_unity_b.wav" type="audio/wav">
-                      Your browser does not support the audio element.
-                    </audio>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tg-0lax">StreamSpeech</td>
-                  <td class="tg-baqh">Third text</td>
-                  <td class="tg-baqh">Third text</td>
-                  <td class="tg-baqh">
-                    <audio controls>
-                      <source src="static/audio/audio3_streamspeech_a.wav" type="audio/wav">
-                      Your browser does not support the audio element.
-                    </audio>
-                  </td>
-                  <td class="tg-baqh">
-                    <audio controls>
-                      <source src="static/audio/audio3_streamspeech_b.wav" type="audio/wav">
+                      <source src="static/audio/audio1_offline_unity_b.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax" rowspan="2">Simultaneous</td>
-                  <td class="tg-0lax">Wait-k</td>
-                  <td class="tg-baqh">Third text</td>
-                  <td class="tg-baqh">Third text</td>
+                  <td class="tg-0lax"><font color="red">StreamSpeech</font></td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">First text</td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio3_waitk_a.wav" type="audio/wav">
+                      <source src="static/audio/audio1_streamspeech_a.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio3_waitk_b.wav" type="audio/wav">
+                      <source src="static/audio/audio1_streamspeech_b.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax">StreamSpeech</td>
-                  <td class="tg-baqh">Third text</td>
-                  <td class="tg-baqh">Third text</td>
+                  <td class="tg-0lax" rowspan="2"><strong>Simultaneous</strong></td>
+                  <td class="tg-0lax">Wait-k (k=3)</td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">First text</td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio3_streamspeech_simul_a.wav" type="audio/wav">
+                      <source src="static/audio/audio1_waitk_a.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio3_streamspeech_simul_b.wav" type="audio/wav">
+                      <source src="static/audio/audio1_waitk_b.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax"><font color="red">StreamSpeech<br>(chunk=320ms)</font></td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="static/audio/audio1_streamspeech_simul_a.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="static/audio/audio1_streamspeech_simul_b.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
@@ -587,100 +590,110 @@
             <table class="tg">
               <thead>
                 <tr>
-                  <th class="tg-0lax" colspan="6">DDDD.mp4</th>
+                  <th class="tg-0lax" colspan="6">AAAA.mp4</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="tg-0lax">Speech inputs</td>
+                  <td class="tg-0lax"><strong>Speech Inputs</strong></td>
                   <td class="tg-0lax" colspan="5">
                     <audio controls>
-                      <source src="static/audio/audio4.wav" type="audio/wav">
+                      <source src="static/audio/audio1.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                 </tr>
                 <tr>
+                  <td class="tg-0lax" rowspan="3"><strong>Ground Truth</strong></td>
                   <td class="tg-0lax">Transcription:</td>
-                  <td class="tg-0lax" colspan="5">Fourth audio transcription</td>
+                  <td class="tg-0lax" colspan="4">First audio transcription</td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax">Ground Truth:</td>
-                  <td class="tg-0lax" colspan="5">Fourth audio ground truth</td>
+                  <td class="tg-0lax">Target Translation:</td>
+                  <td class="tg-0lax" colspan="4">First audio ground truth</td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax" colspan="2">Tasks</td>
-                  <td class="tg-baqh">ASR</td>
-                  <td class="tg-baqh">S2TT</td>
-                  <td class="tg-baqh">S2ST (A)</td>
-                  <td class="tg-baqh">S2ST (B)</td>
+                   <td class="tg-0lax">Target Speech:</td>
+                  <td class="tg-0lax" colspan="4">
+                    <audio controls>
+                      <source src="static/audio/audio1.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax" rowspan="2">Offline</td>
+                  <td class="tg-0lax" colspan="2"><strong>Tasks</strong></td>
+                  <td class="tg-baqh"><strong>ASR</strong></td>
+                  <td class="tg-baqh"><strong>S2TT</strong></td>
+                  <td class="tg-baqh"><strong>S2ST<br>(output)</strong></td>
+                  <td class="tg-baqh"><strong>S2ST<br>(multi-channel)</strong></td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax" rowspan="2"><strong>Offline</strong></td>
                   <td class="tg-0lax">UnitY</td>
-                  <td class="tg-baqh">Fourth text</td>
-                  <td class="tg-baqh">Fourth text</td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">First text</td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio4_offline_unity_a.wav" type="audio/wav">
+                      <source src="static/audio/audio1_offline_unity_a.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio4_offline_unity_b.wav" type="audio/wav">
-                      Your browser does not support the audio element.
-                    </audio>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tg-0lax">StreamSpeech</td>
-                  <td class="tg-baqh">Fourth text</td>
-                  <td class="tg-baqh">Fourth text</td>
-                  <td class="tg-baqh">
-                    <audio controls>
-                      <source src="static/audio/audio4_streamspeech_a.wav" type="audio/wav">
-                      Your browser does not support the audio element.
-                    </audio>
-                  </td>
-                  <td class="tg-baqh">
-                    <audio controls>
-                      <source src="static/audio/audio4_streamspeech_b.wav" type="audio/wav">
+                      <source src="static/audio/audio1_offline_unity_b.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax" rowspan="2">Simultaneous</td>
-                  <td class="tg-0lax">Wait-k</td>
-                  <td class="tg-baqh">Fourth text</td>
-                  <td class="tg-baqh">Fourth text</td>
+                  <td class="tg-0lax"><font color="red">StreamSpeech</font></td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">First text</td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio4_waitk_a.wav" type="audio/wav">
+                      <source src="static/audio/audio1_streamspeech_a.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio4_waitk_b.wav" type="audio/wav">
+                      <source src="static/audio/audio1_streamspeech_b.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                 </tr>
                 <tr>
-                  <td class="tg-0lax">StreamSpeech</td>
-                  <td class="tg-baqh">Fourth text</td>
-                  <td class="tg-baqh">Fourth text</td>
+                  <td class="tg-0lax" rowspan="2"><strong>Simultaneous</strong></td>
+                  <td class="tg-0lax">Wait-k (k=3)</td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">First text</td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio4_streamspeech_simul_a.wav" type="audio/wav">
+                      <source src="static/audio/audio1_waitk_a.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
                   <td class="tg-baqh">
                     <audio controls>
-                      <source src="static/audio/audio4_streamspeech_simul_b.wav" type="audio/wav">
+                      <source src="static/audio/audio1_waitk_b.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax"><font color="red">StreamSpeech<br>(chunk=320ms)</font></td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">First text</td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="static/audio/audio1_streamspeech_simul_a.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="static/audio/audio1_streamspeech_simul_b.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </td>
