@@ -141,7 +141,7 @@
 <!-- End paper abstract -->
 
 <!-- Single Image Display -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">StreamSpeech</h2>
@@ -149,11 +149,9 @@
         <img src="meta/images/model.png" alt="MY ALT TEXT" style="width: 80%;"/>
         <div class="column is-four-fifths">
         <div class="columns is-centered has-text-centered">
-        <div class="content has-text-justified">
           <p>
           StreamSpeech employs two-pass architecture that first converts source speech into target text hidden states (autoregressive speech-to-text translation, AR-S2TT) and then generates target speech. The source/target/unit CTC decoders are introduced to learn alignments via multiple tasks of speech recognition (ASR), non-autoregressive speech-to-text translation (NAR-S2TT) and speech-to-unit translation (S2UT), accordingly guide the policy.
         </p>
-        </div>
       </div>
       </div>
       </div>
@@ -679,7 +677,18 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{streamspeech,
+    title = "StreamSpeech: Simultaneous Speech-to-Speech Translation with Multi-task Learning",
+    author = "Zhang, Shaolei  and
+      Fang, Qingkai  and
+      Guo, Shoutao  and
+      Ma, Zhengrui  and
+      Zhang, Min  and
+      Feng, Yang",
+    booktitle = "Proceedings of the 62th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    year = "2024",
+    publisher = "Association for Computational Linguistics",
+  }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
