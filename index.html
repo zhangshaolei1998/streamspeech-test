@@ -179,6 +179,8 @@
               <option value="audio2">French-to-English: common_voice_fr_17767732.mp3</option>
               <option value="audio3">French-to-English: common_voice_fr_17319835.mp3</option>
               <option value="audio4">French-to-English: common_voice_fr_19458925.mp3</option>
+              <option value="audio5">Spanish-to-English: common_voice_fr_19458925.mp3</option>
+              <option value="audio6">Spanish-to-English: common_voice_es_19716154.mp3</option>
             </select>
           </div>
         </div>
@@ -639,6 +641,235 @@
             </table>
           </div>
         </div>
+
+        <div id="audio5" class="audio-row box" style="display:none;">
+          <h3 class="title is-4">Spanish-to-English: common_voice_fr_19458925.mp3</h3>
+          <div class="content">
+            <table class="tg">
+              <tbody>
+                <tr>
+                  <td class="tg-0lax"><strong>Speech Inputs</strong></td>
+                  <td class="tg-0lax" colspan="5">
+                    <audio controls>
+                      <source src="meta/audio/common_voice_es_19759842.source.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax" rowspan="3"><strong>Ground Truth</strong></td>
+                  <td class="tg-0lax">Transcription:</td>
+                  <td class="tg-0lax" colspan="4">es considerado el mayor mercado financiero del mundo</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Translation:</td>
+                  <td class="tg-0lax" colspan="4">it's considered the biggest financial market in the world</td>
+                </tr>
+                <tr>
+                   <td class="tg-0lax">Target Speech:</td>
+                  <td class="tg-0lax" colspan="4">
+                    <audio controls>
+                      <source src="meta/audio/common_voice_es_19759842.ref.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax" colspan="2"><strong>Tasks</strong></td>
+                  <td class="tg-baqh"><strong>ASR</strong></td>
+                  <td class="tg-baqh"><strong>S2TT</strong></td>
+                  <td class="tg-baqh"><strong>S2ST (output)</strong></td>
+                  <td class="tg-baqh"><strong>S2ST (multi-channel)</strong><br><i>left: inputs</i> | <i>right: outputs</i></td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax" rowspan="2"><strong>Offline</strong></td>
+                  <td class="tg-0lax">UnitY</td>
+                  <td class="tg-baqh">N/A</td>
+                  <td class="tg-baqh">it is considered the greatest financial market in the world</td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/offline.unity.common_voice_es_19759842.target.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/offline.unity.common_voice_es_19759842.merge.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax"><font color="red">StreamSpeech</font></td>
+                  <td class="tg-baqh">es considerada del mayor mercadodo financiera del mundo</td>
+                  <td class="tg-baqh">it is considered to be the largest financial market in the world</td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/offline.streamspeech.common_voice_es_19759842.target.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/offline.streamspeech.common_voice_es_19759842.merge.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax" rowspan="2"><strong>Simultaneous</strong></td>
+                  <td class="tg-0lax">Wait-k (k=3)</td>
+                  <td class="tg-baqh">N/A</td>
+                  <td class="tg-baqh">the cloth is considered the biggest financial market in the world</td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/waitk.common_voice_es_19759842.target.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/waitk.common_voice_es_19759842.merge.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax"><font color="red">StreamSpeech<br>(chunk=320ms)</font></td>
+                  <td class="tg-baqh">es considerado el mayor mercado financiero del mundo</td>
+                  <td class="tg-baqh">it is considered to be the most financial market of the world</td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/streamspeech.common_voice_es_19759842.target.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/streamspeech.common_voice_es_19759842.merge.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="audio6" class="audio-row box" style="display:none;">
+          <h3 class="title is-4">Spanish-to-English: common_voice_es_19716154.mp3</h3>
+          <div class="content">
+            <table class="tg">
+              <tbody>
+                <tr>
+                  <td class="tg-0lax"><strong>Speech Inputs</strong></td>
+                  <td class="tg-0lax" colspan="5">
+                    <audio controls>
+                      <source src="meta/audio/common_voice_es_19716154.source.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax" rowspan="3"><strong>Ground Truth</strong></td>
+                  <td class="tg-0lax">Transcription:</td>
+                  <td class="tg-0lax" colspan="4">es uno de los personajes más reconocidos y más importantes de la historia costarricense</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Translation:</td>
+                  <td class="tg-0lax" colspan="4">they are one of the most famous and important figures in costa rican history</td>
+                </tr>
+                <tr>
+                   <td class="tg-0lax">Target Speech:</td>
+                  <td class="tg-0lax" colspan="4">
+                    <audio controls>
+                      <source src="meta/audio/common_voice_es_19716154.ref.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax" colspan="2"><strong>Tasks</strong></td>
+                  <td class="tg-baqh"><strong>ASR</strong></td>
+                  <td class="tg-baqh"><strong>S2TT</strong></td>
+                  <td class="tg-baqh"><strong>S2ST (output)</strong></td>
+                  <td class="tg-baqh"><strong>S2ST (multi-channel)</strong><br><i>left: inputs</i> | <i>right: outputs</i></td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax" rowspan="2"><strong>Offline</strong></td>
+                  <td class="tg-0lax">UnitY</td>
+                  <td class="tg-baqh">N/A</td>
+                  <td class="tg-baqh">one of the most known and most important characters in costa rican history</td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/offline.unity.common_voice_es_19716154.target.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/offline.unity.common_voice_es_19716154.merge.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax"><font color="red">StreamSpeech</font></td>
+                  <td class="tg-baqh">uno de los personajes más reconocidos y más importantes de la historia costarricense</td>
+                  <td class="tg-baqh">one of the most important and most important characters in costa rican history</td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/offline.streamspeech.common_voice_es_19716154.target.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/offline.streamspeech.common_voice_es_19716154.merge.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax" rowspan="2"><strong>Simultaneous</strong></td>
+                  <td class="tg-0lax">Wait-k (k=3)</td>
+                  <td class="tg-baqh">N/A</td>
+                  <td class="tg-baqh">one of the most famous and most important characters in costa rican history</td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/waitk.common_voice_es_19716154.target.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/waitk.common_voice_es_19716154.merge.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax"><font color="red">StreamSpeech<br>(chunk=320ms)</font></td>
+                  <td class="tg-baqh">uno de los personajes más reconocidos y más importantes de la historia costarricense</td>
+                  <td class="tg-baqh">one of the most famous and most important characters in costa rica's history</td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/streamspeech.common_voice_es_19716154.target.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                  <td class="tg-baqh">
+                    <audio controls>
+                      <source src="meta/audio/streamspeech.common_voice_es_19716154.merge.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
