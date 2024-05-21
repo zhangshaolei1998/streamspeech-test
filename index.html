@@ -56,17 +56,17 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Shaolei Zhang</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Shaolei Zhang</a><sup>1,2</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Qingkai Fang</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Qingkai Fang</a><sup>1,2</sup>,</span>
                   <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Shoutao Guo</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Shoutao Guo</a><sup>1,2</sup>,</span>
                   <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zhengrui Ma</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zhengrui Ma</a><sup>1,2</sup>,</span>
                   <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Min Zhang</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Min Zhang</a><sup>3</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yang Feng</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yang Feng</a><sup>1,2,*</sup>
                   </span>
                   </div>
 
@@ -87,7 +87,7 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
+<!--                     <!-- Supplementary PDF link -->
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -96,7 +96,7 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -129,7 +129,7 @@
 
   
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
@@ -142,7 +142,7 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -153,7 +153,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Simultaneous speech-to-speech translation (Simul-S2ST) outputs target speech while receiving streaming speech inputs, which is critical for real-time communication. Beyond accomplishing translation between speech, SimulS2ST requires a policy to control the model to generate corresponding target speech at the opportune moment within speech inputs, thereby posing a double challenge of translation and policy. In this paper, we propose StreamSpeech, a direct Simul-S2ST model that jointly learns translation and simultaneous policy in a unified framework of multi-task learning. By leveraging multi-task learning across speech recognition, speech-to-text translation, and speech synthesis, StreamSpeech effectively identifies the opportune moment to start translating and subsequently generates the corresponding target speech. Experimental results demonstrate that StreamSpeech achieves state-of-the-art performance in both offline S2ST and Simul-S2ST tasks. Owing to the multitask learning, StreamSpeech is able to present intermediate results (i.e., ASR or translation results) during simultaneous translation process, offering a more comprehensive translation experience.
           </p>
         </div>
       </div>
